@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Shrikhand';
+@import "https://fontlibrary.org/face/hanken";
+
+body {
+	margin: auto;
+	max-width: 50%;
+	background-color: #f9f8f4;
+}
+
+#site-name {
+	font-family: 'Shrikhand', cursive;
+	font-size: 4.5em;
+	color: #2d2d2d;
+	text-align: center;
+
+	margin: 0em 0em;
+	text-shadow: .1em .1em #f22e2e, .2em .2em #f2982e, .3em .3em #fbef50;
+}
+
+div.sections {
+	text-align: center;
+	font-family: 'HankenBook';
+	color: #2d2d2d;
+}
+
+.stories ul.story-list li iframe {
+	width: 100%;
+	height: 300px;
+	border: none;
+	padding-top: 1em;
+}
+
+.nav-buttons {
+	padding-bottom: 4em;
+	align-content: center;
+}
+
+.nav-buttons button {
+	padding: 0;
+	width: 50%;
+	height: 2em;
+	font-size: 1.2em;
+	border: none;
+	font-family: 'Shrikhand', cursive;
+	background-color: #2d2d2d;
+	color: #f9f8f4;
+}
+
+@keyframes burn {
+	0%   {box-shadow: .2em .2em #fbef50;}
+	60%  {box-shadow: .2em .2em #f2982e, .4em .4em #fbef50;}
+	100% {box-shadow: .2em .2em #f22e2e, .4em .4em #f2982e, .6em .6em #fbef50;}
+}
+
+.nav-buttons button:hover {
+	animation-name: burn;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.nav-buttons button:active {
+	margin-top: .2em;
+	animation: none;
+}
+
+#newButton {
+	float: left;
+	border-radius: .25em 0em 0em .25em;
+	border-right: 1px solid #262626;
+}
+
+#oldButton {
+	float: right;
+	border-radius: 0em .25em .25em 0em;
+	border-left: 1px solid #404040;
+}
