@@ -4,46 +4,8 @@
 	<meta charset="utf-8">
 	<title>Sam from Cadott</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<style media="screen">
-	ul.story-list {
-		list-style: none;
-		padding-left: 0;
-		padding-top: 1em;
-	}
-
-	.stories ul.story-list li iframe {
-		width: 100%;
-		height: 300px;
-		border: none;
-	}
-	</style>
-	<link rel="stylesheet" href="css/white-fire.css" charset="utf-8">
 </head>
 <body>
-	<h1 id="site-name">Sam from Cadott</h1>
-	<div class="sections">
-		<a href="about/index.html">About</a>
-		<a href="archive/index.html">Archive</a>
-	</div>
-	<div class="stories">
-		<ul class="story-list">
-			<li><iframe src="1843/01/01/preview.html"></iframe></li>
-		</ul>
-		<div class="nav-buttons">
-			<button id="newButton" type="button" onclick="changePage(-10);">Newer</button>
-			<button id="oldButton" type="button" onclick="changePage(10);">Older</button>
-		</div>
-	</div>
-	<script type="text/javascript">
-	var offset = 0;
-	var storyCount = $('ul.story-list li').length;
-	$('ul.story-list li').hide().slice(offset, offset+10).show();
-	function changePage(change) {
-		if (offset + change >= 0  && offset + change <= storyCount) {
-			offset += change;
-			$('ul.story-list li').hide().slice(offset, offset+10).show();
-		}
-	}
-	</script>
+
 </body>
 </html>
