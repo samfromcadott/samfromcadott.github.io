@@ -1,0 +1,19 @@
+{
+  "name": "samfromcadott",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "coffee --compile --output lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samfromcadott/samfromcadott.github.io.git"
+  },
+  "author": "Sam from Cadott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samfromcadott/samfromcadott.github.io/issues"
+  },
+  "homepage": "https://samfromcadott.github.io/"
+}
