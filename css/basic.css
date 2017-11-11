@@ -1,0 +1,23 @@
+/*Template page style*/
+
+body {
+	margin: 0;
+}
+
+#page-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#header {
+
+}
+
+#page-content {
+	flex-grow: 1;
+}
+
+#footer {
+	height: 2em;
+}
