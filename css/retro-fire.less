@@ -1,26 +1,36 @@
 @import 'https://fonts.googleapis.com/css?family=Shrikhand';
 @import "https://fontlibrary.org/face/hanken";
 
+//Fonts
+@large-font: 'Shrikhand', cursive;
+@small-font: 'HankenBook', sans-serif;
+
+//Colors
+@light-color: #f9f8f4;
+@dark-color: #2d2d2d;
+
+@fire-red: #f22e2e;
+@fire-orange: #f2982e;
+@fire-yellow: #fbef50;
+
 body {
-	margin: auto;
-	max-width: 50%;
-	background-color: #f9f8f4;
+	background-color: @light-color;
+	color: @dark-color;
 }
 
-#site-name {
-	font-family: 'Shrikhand', cursive;
+h1 {
+	font-family: @large-font;
 	font-size: 4.5em;
-	color: #2d2d2d;
+	color: @dark-color;
 	text-align: center;
 
-	margin: 0em 0em;
-	text-shadow: .1em .1em #f22e2e, .2em .2em #f2982e, .3em .3em #fbef50;
+	text-shadow: .1em .1em @fire-red, .2em .2em @fire-orange, .3em .3em @fire-yellow;
 }
 
 div.sections {
 	text-align: center;
-	font-family: 'HankenBook';
-	color: #2d2d2d;
+	font-family: @small-font;
+	color: @dark-color;
 }
 
 .stories ul.story-list li iframe {
@@ -41,15 +51,15 @@ div.sections {
 	height: 2em;
 	font-size: 1.2em;
 	border: none;
-	font-family: 'Shrikhand', cursive;
-	background-color: #2d2d2d;
-	color: #f9f8f4;
+	font-family: @large-font;
+	background-color: @dark-color;
+	color: @light-color;
 }
 
 @keyframes burn {
-	0%   {box-shadow: .2em .2em #fbef50;}
-	60%  {box-shadow: .2em .2em #f2982e, .4em .4em #fbef50;}
-	100% {box-shadow: .2em .2em #f22e2e, .4em .4em #f2982e, .6em .6em #fbef50;}
+	0%   {box-shadow: .2em .2em @fire-yellow;}
+	60%  {box-shadow: .2em .2em @fire-orange, .4em .4em @fire-yellow;}
+	100% {box-shadow: .2em .2em @fire-red, .4em .4em @fire-orange, .6em .6em @fire-yellow;}
 }
 
 .nav-buttons button:hover {
