@@ -1,5 +1,5 @@
 {
 	"styles": [
-		"retro-fire"
+		{"name": "Retro Fire", "file": "retro-fire"}
 	]
 }
