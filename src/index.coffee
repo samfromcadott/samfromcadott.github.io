@@ -8,7 +8,7 @@ randomStyle = (styles) ->
 	return currentStyle
 
 setStyle = (style) ->
-	$('head').append '<link id="page-style" rel="stylesheet/less" href="css/' + style + '.less"/>'
+	$('head').append '<link id="page-style" rel="stylesheet/css" href="css/lib/' + style + '.css"/>'
 
 	less.sheets.push( $('#page-style')[0] )
 
