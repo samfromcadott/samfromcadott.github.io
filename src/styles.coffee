@@ -1,3 +1,5 @@
+$ = require 'jquery'
+
 $.getJSON 'css/style.json', (result) -> #Load the style list
 	makeStyleList result.styles #Generate dropdown menu
 	setStyle randomStyle result.styles #Choose a random style at start
@@ -8,11 +10,7 @@ randomStyle = (styles) ->
 	return currentStyle
 
 setStyle = (style) ->
-	$('head').append '<link id="page-style" rel="stylesheet/css" href="css/lib/' + style + '.css"/>'
-
-	less.sheets.push( $('#page-style')[0] )
-
-	less.refresh()
+	$('head').append '<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>'
 
 makeStyleList = (styleList) ->
 	for i in styleList
