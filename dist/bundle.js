@@ -10450,20 +10450,26 @@ window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery__["jQuery"]
 
 
 
+// import {styles} from '../css/style.json'
+// console.log(styles)
+
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $, makeStyleList, randomStyle, setStyle;
+var $, makeStyleList, randomStyle, setStyle, styles;
 
 $ = __webpack_require__(0);
 
-$.getJSON('css/style.json', function(result) { //Load the style list
-  makeStyleList(result.styles); //Generate dropdown menu
-  return setStyle(randomStyle(result.styles)); //Choose a random style at start
-});
+({styles} = __webpack_require__(3));
 
+console.log(styles);
+
+// $.getJSON 'css/style.json', (result) -> #Load the style list
+// 	console.log result.styles
+// 	makeStyleList result.styles #Generate dropdown menu
+// 	setStyle randomStyle result.styles #Choose a random style at start
 randomStyle = function(styles) {
   var currentStyle;
   currentStyle = styles[Math.floor(Math.random() * styles.length)].file; //Get style from list
@@ -10474,22 +10480,32 @@ setStyle = function(style) {
   return $('head').append('<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>');
 };
 
-makeStyleList = function(styleList) {
+makeStyleList = function(styles) {
   var i, j, len, results;
   results = [];
-  for (j = 0, len = styleList.length; j < len; j++) {
-    i = styleList[j];
-    console.log(i);
+  for (j = 0, len = styles.length; j < len; j++) {
+    i = styles[j];
     // Add each style to the dropdown
-    results.push($('#style-chooser').append('<option value="' + i.file + '" >' + i.name + '</option>'));
+    results.push($('#style-chooser').append('<option value="' + i.file + '">' + i.name + '</option>'));
   }
   return results;
 };
 
+// console.log '<option value="' + i.file + '">' + i.name + '</option>'
 $('#style-chooser').change = function() {
   return setStyle($(this).val());
 };
 
+makeStyleList(styles); //Generate dropdown menu
+
+setStyle(randomStyle(styles)); //Choose a random style at start
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = {"styles":[{"name":"Retro Fire","file":"retro-fire"}]}
 
 /***/ })
 /******/ ]);
