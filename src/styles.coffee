@@ -8,6 +8,7 @@ randomStyle = (styles) ->
 
 setStyle = (style) ->
 	$('head').append '<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>'
+	$('#style-chooser').val(style)
 
 makeStyleList = (styles) ->
 	for i in styles

@@ -10468,7 +10468,8 @@ randomStyle = function(styles) {
 };
 
 setStyle = function(style) {
-  return $('head').append('<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>');
+  $('head').append('<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>');
+  return $('#style-chooser').val(style);
 };
 
 makeStyleList = function(styles) {
