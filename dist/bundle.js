@@ -10923,7 +10923,7 @@ randomStyle = function(styles) {
 
 setStyle = function(style) {
   // $('head').append '<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>'
-  __webpack_require__(6)(`./${style}.less`);
+  __webpack_require__(6)("./" + style + '.less');
   return $('#style-chooser').val(style);
 };
 
@@ -11017,7 +11017,7 @@ exports = module.exports = __webpack_require__(1)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|UnifrakturCook:700|Voltaire);", ""]);
 
 // module
-exports.push([module.i, "body {\n  background-color: #0c0e03;\n  color: #a4f200;\n  font-family: 'Voltaire', sans-serif;\n}\nh1 {\n  font-family: 'UnifrakturCook', cursive;\n}\n", ""]);
+exports.push([module.i, ".gradient {\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\nbody {\n  background-color: #0c0e03;\n  color: #a4f200;\n  font-family: 'Voltaire', sans-serif;\n}\nh1 {\n  font-family: 'UnifrakturCook', cursive;\n  font-size: 4.5em;\n  text-align: center;\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\n", ""]);
 
 // exports
 
