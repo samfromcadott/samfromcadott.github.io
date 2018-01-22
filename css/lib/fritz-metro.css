@@ -1,0 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker|UnifrakturCook:700|Voltaire";
+body {
+  background-color: #0c0e03;
+  color: #a4f200;
+  font-family: 'Voltaire', sans-serif;
+}
+h1 {
+  font-family: 'UnifrakturCook', cursive;
+}

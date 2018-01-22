@@ -10450,9 +10450,6 @@ window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery__["jQuery"]
 
 
 
-// import {styles} from '../css/style.json'
-// console.log(styles)
-
 
 /***/ }),
 /* 2 */
@@ -10464,12 +10461,6 @@ $ = __webpack_require__(0);
 
 ({styles} = __webpack_require__(3));
 
-console.log(styles);
-
-// $.getJSON 'css/style.json', (result) -> #Load the style list
-// 	console.log result.styles
-// 	makeStyleList result.styles #Generate dropdown menu
-// 	setStyle randomStyle result.styles #Choose a random style at start
 randomStyle = function(styles) {
   var currentStyle;
   currentStyle = styles[Math.floor(Math.random() * styles.length)].file; //Get style from list
@@ -10491,7 +10482,6 @@ makeStyleList = function(styles) {
   return results;
 };
 
-// console.log '<option value="' + i.file + '">' + i.name + '</option>'
 $('#style-chooser').change = function() {
   return setStyle($(this).val());
 };
@@ -10505,7 +10495,7 @@ setStyle(randomStyle(styles)); //Choose a random style at start
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = {"styles":[{"name":"Retro Fire","file":"retro-fire"}]}
+module.exports = {"styles":[{"name":"Retro Fire","file":"retro-fire"},{"name":"Fritz Metro","file":"fritz-metro"}]}
 
 /***/ })
 /******/ ]);
