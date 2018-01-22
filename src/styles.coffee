@@ -7,7 +7,8 @@ randomStyle = (styles) ->
 	return currentStyle
 
 setStyle = (style) ->
-	$('head').append '<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>'
+	# $('head').append '<link id="page-style" rel="stylesheet" href="./css/lib/' + style + '.css"/>'
+	require '../css/src/#{style}.less'
 	$('#style-chooser').val(style)
 
 makeStyleList = (styles) ->

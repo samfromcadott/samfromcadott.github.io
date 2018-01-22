@@ -1,7 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Shrikhand';
+@font-face {
+  font-family: 'HankenBook';
+  src: url('https://fontlibrary.org/assets/fonts/hanken/855de8cbbcb144bc29cdd2927821141f/b7f999e763b801361e845a944e431687/HankenBook.ttf');
+}
 body {
   background-color: #f9f8f4;
   color: #2d2d2d;
+  font-family: 'HankenBook', sans-serif;
 }
 h1 {
   font-family: 'Shrikhand', cursive;
