@@ -2,14 +2,18 @@
 
 @import "https://fonts.googleapis.com/css?family=Permanent+Marker|UnifrakturCook:700|Voltaire";
 
+//Fonts
 @head-font: 'UnifrakturCook', serif;
 @normal-font: 'Voltaire', sans-serif;
 @brush-font: 'Permanent Marker', cursive;
 
+//Colors
 @dark-color: #0c0e03;
+@light-background: desaturate( lighten(@dark-color, 20%), 30% );
 @bright-green: #a4f200;
 @dark-blue: #041b39;
 
+//Mixins
 .gradient {
 	background-image: linear-gradient(
 		darken(@bright-green, 20%),
@@ -19,6 +23,10 @@
 	color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
+}
+
+.shadow {
+	box-shadow: 0.1em 0.1em @dark-color, 0.2em 0.2em @light-background;
 }
 
 body {

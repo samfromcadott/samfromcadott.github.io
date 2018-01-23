@@ -5,6 +5,9 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+.shadow {
+  box-shadow: 0.1em 0.1em #0c0e03, 0.2em 0.2em #495027;
+}
 body {
   background-color: #0c0e03;
   color: #a4f200;
