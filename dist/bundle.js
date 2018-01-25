@@ -10898,9 +10898,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_coffee__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_coffee___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_coffee__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__content_coffee__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__content_coffee___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__content_coffee__);
 
 window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery__["$"]
 window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery__["jQuery"]
+
 
 
 
@@ -11161,6 +11164,53 @@ exports.push([module.i, "@font-face {\n  font-family: 'HankenBook';\n  src: url(
 
 // exports
 
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $, articles, makeArticle, parseArticles;
+
+$ = __webpack_require__(0);
+
+articles = __webpack_require__(13);
+
+parseArticles = function() {
+  var key, results, value;
+  results = [];
+  for (key in articles) {
+    value = articles[key];
+    results.push($('#web').append(makeArticle(key, './data/html/' + value.description)));
+  }
+  return results;
+};
+
+makeArticle = function(name, file) {
+  var article, content, header;
+  article = $('<div />', {
+    class: 'article'
+  });
+  header = $('<h3 />', {
+    html: name,
+    class: 'article-header',
+    appendTo: article
+  });
+  content = $('<div />', {
+    class: 'article-content',
+    appendTo: article
+  });
+  content.load(file);
+  return article;
+};
+
+parseArticles();
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = {"Gothic Number Converter":{"category":"web","description":"gothic.html"}}
 
 /***/ })
 /******/ ]);
