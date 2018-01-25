@@ -36,8 +36,21 @@ body {
 }
 
 h1 {
+	position: relative;
+
 	font-family: @head-font;
 	font-size: 4.5em;
 	text-align: center;
 	.gradient;
+
+	&::after {
+		background: none;
+		content: 'Sam from Cadott';
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		min-width: 100%;
+		text-shadow: 0.025em 0.025em @dark-color, 0.05em 0.05em @light-background;
+	}
 }

@@ -11020,7 +11020,7 @@ exports = module.exports = __webpack_require__(1)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|UnifrakturCook:700|Voltaire);", ""]);
 
 // module
-exports.push([module.i, ".gradient {\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\n.shadow {\n  box-shadow: 0.1em 0.1em #0c0e03, 0.2em 0.2em #495027;\n}\nbody {\n  background-color: #0c0e03;\n  color: #a4f200;\n  font-family: 'Voltaire', sans-serif;\n}\nh1 {\n  font-family: 'UnifrakturCook', serif;\n  font-size: 4.5em;\n  text-align: center;\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\n", ""]);
+exports.push([module.i, ".gradient {\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\n.shadow {\n  box-shadow: 0.1em 0.1em #0c0e03, 0.2em 0.2em #495027;\n}\nbody {\n  background-color: #0c0e03;\n  color: #a4f200;\n  font-family: 'Voltaire', sans-serif;\n}\nh1 {\n  position: relative;\n  font-family: 'UnifrakturCook', serif;\n  font-size: 4.5em;\n  text-align: center;\n  background-image: linear-gradient(#5f8c00, #a4f200 38%, #041b39 90%);\n  color: transparent;\n  -webkit-background-clip: text;\n  background-clip: text;\n}\nh1::after {\n  background: none;\n  content: 'Sam from Cadott';\n  z-index: -1;\n  position: absolute;\n  left: 0;\n  top: 0;\n  min-width: 100%;\n  text-shadow: 0.025em 0.025em #0c0e03, 0.05em 0.05em #495027;\n}\n", ""]);
 
 // exports
 

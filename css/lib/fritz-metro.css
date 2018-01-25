@@ -14,6 +14,7 @@ body {
   font-family: 'Voltaire', sans-serif;
 }
 h1 {
+  position: relative;
   font-family: 'UnifrakturCook', serif;
   font-size: 4.5em;
   text-align: center;
@@ -21,4 +22,14 @@ h1 {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+h1::after {
+  background: none;
+  content: 'Sam from Cadott';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  text-shadow: 0.025em 0.025em #0c0e03, 0.05em 0.05em #495027;
 }
