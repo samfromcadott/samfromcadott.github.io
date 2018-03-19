@@ -16,8 +16,10 @@ makeStyleList = (styles) ->
 		# Add each style to the dropdown
 		$('#style-chooser').append '<option value="' + i.file + '">' + i.name + '</option>'
 
-$('#style-chooser').change = () ->
-	setStyle $(this).val()
+$('#style-chooser').change( () ->
+	console.log $('#style-chooser').val()
+	setStyle $('#style-chooser').val()
+)
 
 makeStyleList styles #Generate dropdown menu
 setStyle randomStyle styles #Choose a random style at start
