@@ -33,7 +33,8 @@ body {
 .social-links {
 	font-size: 4em;
 	text-align: center;
-	margin-top: 40%;
+	position: relative;
+	top: 30%;
 }
 
 .social-links > a {
