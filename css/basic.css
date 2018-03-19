@@ -1,4 +1,6 @@
 /*Template page style*/
+@import "https://use.fontawesome.com/releases/v5.0.8/css/brands.css";
+@import "https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css";
 
 body {
 	margin: 0;
@@ -17,10 +19,30 @@ body {
 #page-content {
 	flex-grow: 1;
 	width: 70%;
+	min-height: 100vh;
 	max-width: 20cm;
 	margin: auto;
 }
 
 #footer {
-	height: 2em;
+	height: 100vh;
+	background-color: #d6d6d6;
 }
+
+.social-links {
+	font-size: 4em;
+	color: #808080;
+	text-align: center;
+	margin-top: 40%;
+}
+
+.social-links > a {
+	color: inherit;
+	margin: 0em 0.25em;
+}
+
+/* Link colors */
+
+#youtube-link:hover {color: #ff0000;}
+#github-link:hover {color: #333;}
+#patreon-link:hover {color: #052d49;}
