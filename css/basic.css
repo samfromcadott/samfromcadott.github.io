@@ -27,11 +27,11 @@ body {
 #footer {
 	height: 100vh;
 	background-color: #d6d6d6;
+	color: #808080;
 }
 
 .social-links {
 	font-size: 4em;
-	color: #808080;
 	text-align: center;
 	margin-top: 40%;
 }
