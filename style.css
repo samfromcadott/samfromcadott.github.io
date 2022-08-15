@@ -1,0 +1,97 @@
+:root {
+  --accent-color: #f69c49;
+}
+
+
+body {
+	width: 90%;
+	max-width: 25cm;
+	margin: auto;
+	font-family: "NowRegular", sans-serif;
+	font-size: 14pt;
+}
+
+#header {
+	/* display: inline-block; */
+	width: 100%;
+	position: relative;
+}
+
+#skill-container {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2em;
+}
+
+h1 {
+	margin-bottom: 0.1em;
+	font-family: "ComfortaaRegular", sans-serif;
+	font-weight: bold;
+}
+
+a {
+	color: var(--accent-color);
+}
+
+.heading {
+	font-family: "ComfortaaRegular", sans-serif;
+	font-weight: bold;
+	color: var(--accent-color);
+}
+
+table {
+	width: 95%;
+	margin: auto;
+	table-layout: fixed;
+}
+
+th {
+	text-align: left;
+}
+
+tr {
+	height: 2em;
+}
+
+.skill-item {
+	width: 40%;
+	flex-grow: 1.5;
+	max-width: 50%;
+}
+
+.skill-item > .heading {
+	margin-bottom: 0.2em;
+}
+
+.skill-item > hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #909090;
+}
+
+li::marker {
+	color: var(--accent-color);
+	content: "\00D7\0020  ";
+}
+
+.social-links {
+	font-size: 2em;
+	color: #c7c7c7;
+	margin-top: 0.5em;
+	/* float: right; */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.social-links > a {
+	color: inherit;
+	margin: 0em 0.25em;
+	display: inline-block;
+}
+
+/* Link colors */
+
+#youtube-link:hover {color: #ff0000;}
+#github-link:hover {color: #333;}
+#artstation-link:hover {color: #13aff0;}
