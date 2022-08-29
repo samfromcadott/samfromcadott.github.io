@@ -5,6 +5,7 @@
 
 body {
 	width: 90%;
+	height: 100%;
 	max-width: 25cm;
 	margin: auto;
 	font-family: "NowRegular", sans-serif;
@@ -43,14 +44,43 @@ table {
 	width: 95%;
 	margin: auto;
 	table-layout: fixed;
+	border-collapse: collapse;
 }
 
-th {
+td {
+	padding-right: 0.2em;
+}
+
+.title-column {
+	width: 40%;
+	text-align: right;
+	vertical-align: text-top;
+	border-right: 3px solid var(--accent-color);
+	padding-right: 0.5em;
+}
+
+.title-column > h3 {
+	font-family: "ComfortaaRegular", sans-serif;
+	font-weight: bold;
+	margin: 0.2em;
+	margin-top: 0.5em;
+}
+
+.title-column > h4 {
+	font-weight: normal;
+	font-size: 12pt;
+	margin: 0.2em;
+}
+
+.description-column {
 	text-align: left;
+	vertical-align: text-top;
+	padding-left: 0.5em;
 }
 
-tr {
-	height: 2em;
+/* Project descriptions */
+.description-column > div {
+	min-height: 5em;
 }
 
 .skill-item {
