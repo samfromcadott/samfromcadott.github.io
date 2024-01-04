@@ -24,6 +24,15 @@ body {
 	gap: 2em;
 }
 
+#project-body {
+	flex-flow: row wrap;
+}
+
+#project-body>a, iframe {
+	width: 49%;
+	display: inline-block;
+}
+
 h1 {
 	margin-bottom: 0.1em;
 	font-family: "ComfortaaRegular", sans-serif;
