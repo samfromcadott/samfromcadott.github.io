@@ -6,7 +6,7 @@
 body {
 	width: 90%;
 	height: 100%;
-	max-width: 25cm;
+	max-width: 30cm;
 	margin: auto;
 	font-family: "NowRegular", sans-serif;
 	font-size: 14pt;
@@ -28,8 +28,9 @@ body {
 	flex-flow: row wrap;
 }
 
-#project-body>a, iframe {
+#project-body>iframe, a>img {
 	width: 49%;
+	height: 18vh;
 	display: inline-block;
 }
 
